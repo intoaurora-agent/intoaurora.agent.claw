@@ -1,16 +1,20 @@
 # FDD-08 — Aurora Career: autonomous opportunity-to-interview pipeline
 
-> **Status:** FUNCTIONAL DESIGN — NOT IMPLEMENTED / NOT ACCEPTED  
+> **Status:** HISTORICAL FUNCTIONAL DESIGN — current implementation acceptance is PARTIAL  
 > **Target:** Existing OpenClaw on OVH, Docker/headless, accessible from Windows and Android  
 > **Timezone:** `America/Argentina/Buenos_Aires`  
 > **Privacy:** Public-safe specification. Do not commit personal/corporate content or credentials.
+
+## Current implementation precedence — 2026-11-17
+
+Read [Career operational audit](../AURORA_CAREER_SPEC.md) and [current handoff](../CURRENT_HANDOFF.md). The existing Career agent, two enabled schedules, Gmail/browser integration and approved unlimited-qualified workflow are deployed with the evidence levels documented there. The historical design below is retained for traceability, not as live execution policy. Its proposed scoring bands, CV adaptation, numerical submission ceilings, extra schedules, paid models and new ledger components are superseded by the current owner grant and private operations v4.0: score >=75/100 plus verified mandatory eligibility, original CV, no owner-imposed numerical application quota, existing schedules/state/tools only. Genuine delivery, recruiter-response, full browser submission and long-term/recovery acceptance remain unverified where the audit says so. Do not restore historical gates as current settings or call the full FDD accepted.
 
 **Cross-cutting contract.** Reuse the existing running OpenClaw, its supported agents/tools, native cron/heartbeat and persistent storage. Do not redesign VPS/network/authentication, change the main model, or incur API costs without explicit approval. Separate Work (corporate) from Career (personal recruiting). Scheduled tasks must not silently duplicate existing automations. No function is DONE based solely on a created cron job; prove live permitted data, persistence after restart, delivery, failure visibility and recovery. Android notifications must be checked, not assumed.
 
 ## 1. Approved goal and identity
 Build a **real autonomous recruiting assistant**, not just a vacancy notifier. It discovers, qualifies, prepares truthful CV variants, applies where allowed, communicates and follows up under explicitly preapproved rules, tracks replies and involves the real candidate when recruiter interest, interview, salary negotiation, offer or other personal judgment appears.
 
-Use existing OVH OpenClaw with a **separate Career agent/workspace, minimal tools, browser profile and persistent ledger**. Operating mailbox: `intoaurora.agent@gmail.com`. Code/docs repository: `intoaurora-agent/intoaurora.agent.claw`. The applicant is always the **real user**; do not invent a second identity. Career must not access Aurora Work/corporate mailbox and must never mix credentials with public Git.
+Use existing OVH OpenClaw with a **separate Career agent/workspace, minimal tools, browser profile and persistent ledger**. Operating mailbox: the dedicated recruitment Gmail account (address retained only in private runtime configuration). Code/docs repository: `intoaurora-agent/intoaurora.agent.claw`. The applicant is always the **real user**; do not invent a second identity. Career must not access Aurora Work/corporate mailbox and must never mix credentials with public Git.
 
 ## 2. Candidate profile as a validated data contract
 - Core experience areas: ERP implementation/support, technical-functional consulting, SQL and CRM-related work, subject to documented CV verification.

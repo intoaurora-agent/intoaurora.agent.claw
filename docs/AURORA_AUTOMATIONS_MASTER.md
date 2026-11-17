@@ -1,10 +1,14 @@
 # AURORA PERSONAL — Functional automations master plan
 
-Status: **DESIGNED / NOT DEPLOYED**  
+Status: **Historical master design; Career implementation audited PARTIAL on 2026-11-17**  
 Date: 2026-11-09  
 Repository target: `intoaurora-agent/intoaurora.agent.claw`  
-Operational email: `intoaurora.agent@gmail.com`  
+Operational email: the dedicated recruitment Gmail account (address retained only in private runtime configuration)  
 Timezone: `America/Argentina/Buenos_Aires`
+
+## Current implementation precedence — 2026-11-17
+
+Career is deployed with existing daily/hourly schedules and approved unlimited-qualified authorization. Real and simulated capabilities remain distinct; full employer-delivery/reply/browser E2E is not accepted. Read [current handoff](CURRENT_HANDOFF.md) and [Career audit](AURORA_CAREER_SPEC.md). The proposed cadences, quotas, components and deployment claims below are historical design, not current Career instructions. This Career audit does not establish deployment/acceptance of the other nine proposed capabilities.
 
 ## Operating context and principles
 
@@ -56,4 +60,4 @@ Suggested cadence, not yet approved: 08:00 calendar; 08:15 briefing; weekday 17:
 
 ## Current disposition
 
-All 10 automations above are **design proposals, not confirmed production features**. Work and Career are the immediate design priorities. The present file captures decisions and requirements so future chats/implementers should read the repository rather than reconstruct project intent from conversation history.
+The ten-module plan above remains a historical design baseline. Career now has the limited, evidence-backed production acceptance described in the current handoff; the other proposals are not validated by that audit. Work and Career are the immediate design priorities. The present file captures decisions and requirements so future chats/implementers should read the repository rather than reconstruct project intent from conversation history.
